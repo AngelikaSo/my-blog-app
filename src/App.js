@@ -2,10 +2,8 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <div>
-        <h1 style={{ color: "blue", textAlign: "center" }}>Test</h1>
-      </div>
+    <div className="text-center text-2xl font-bold text-blue-500">
+      Hello, Tailwind!
     </div>
   );
 }
