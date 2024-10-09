@@ -23,6 +23,10 @@ module.exports = {
         28.75: "28.75rem", // Custom img hero height
         25: "25rem", // Custom img hero height sm, md
       },
+      width: {
+        37: "37rem", // custom text width lg
+        31: "31.5em", // custom text with sm
+      },
     },
   },
   plugins: [],
