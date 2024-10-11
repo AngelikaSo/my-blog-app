@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="lg:px-13.25">
       <div className="flex flex-col content-between w-full">
         <div className="flex flex-col lg:flex-row py-10 items-start">
-          <ul className="py-10 lg:py-0 lg:px-20">
+          <ul className="px-6 py-10 lg:py-0 lg:px-20">
             <li className="py-1">
               <Link to="/">Home</Link>
             </li>
@@ -17,12 +17,16 @@ const Footer = () => {
               <Link to="/">Contact</Link>
             </li>
           </ul>
-          <ul className="lg:px-20">
+          <ul className="px-6 lg:px-20">
             <li className="py-1">
-              <Link to="/404">FAQs</Link>
+              <Link to="/FAQ">FAQs</Link>
             </li>
-            <li className="py-1">Privacy</li>
-            <li className="py-1">Terms</li>
+            <li className="py-1">
+              <Link to="/Privacy">Privacy</Link>
+            </li>
+            <li className="py-1">
+              <Link to="/Terms">Terms</Link>
+            </li>
           </ul>
         </div>
         <div className="flex flex-col ">
