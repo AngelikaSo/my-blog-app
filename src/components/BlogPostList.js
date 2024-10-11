@@ -8,6 +8,7 @@ const BlogPostList = ({ posts }) => {
         {posts.map((post, index) => (
           <BlogPost
             key={index}
+            id={post.id}
             title={post.title}
             description={post.description}
           />
