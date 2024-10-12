@@ -4,7 +4,7 @@ import BlogPost from "./BlogPost";
 const BlogPostList = ({ posts }) => {
   return (
     <>
-      <div className="mb-10">
+      <div>
         {posts.map((post, index) => (
           <BlogPost
             key={index}

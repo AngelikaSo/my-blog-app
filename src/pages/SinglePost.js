@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import React from "react";
 import BlogPost from "../components/BlogPost";
 import Footer from "../components/Footer";
+import Header from "../components/Header";
 
 const SinglePost = ({ posts, ingridients }) => {
   const { id } = useParams();
@@ -12,6 +13,7 @@ const SinglePost = ({ posts, ingridients }) => {
   } else
     return (
       <section>
+        <Header />
         <div>
           <BlogPost title={post.title} description={post.description} />
         </div>
