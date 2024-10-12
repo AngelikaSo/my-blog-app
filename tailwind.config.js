@@ -25,7 +25,11 @@ module.exports = {
       },
       width: {
         37: "37rem", // custom text width lg
-        31: "31.5em", // custom text with sm
+        31: "31.5rem", // custom text with sm
+      },
+      borderWidth: {
+        DEFAULT: "1px",
+        1: "1px",
       },
     },
   },
