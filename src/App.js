@@ -3,10 +3,9 @@ import "./App.css";
 import Home from "./pages/Home";
 import Posts from "./pages/Posts";
 import ErrorPage from "./pages/ErrorPage";
-import SinglePost from "./pages/SinglePost";
-import postsData from "./data-2.json";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import PostDetail from "./pages/PostDetail";
 
 function App() {
   return (
@@ -17,7 +16,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/posts" element={<Posts />} />
           <Route path="*" element={<ErrorPage />} />
-          <Route path="/post/:id" element={<SinglePost posts={postsData} />} />
+          <Route path="/post/:id" element={<PostDetail />} />
         </Routes>
         <Footer />
       </BrowserRouter>
