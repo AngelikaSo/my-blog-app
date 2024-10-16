@@ -1,8 +1,6 @@
 import { useParams } from "react-router-dom";
 import React from "react";
 import BlogPost from "../components/BlogPost";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
 
 const SinglePost = ({ posts }) => {
   const { id } = useParams();
@@ -13,7 +11,6 @@ const SinglePost = ({ posts }) => {
   } else
     return (
       <section>
-        <Header />
         <div>
           <BlogPost title={post.title} description={post.description} />
         </div>
@@ -37,7 +34,6 @@ const SinglePost = ({ posts }) => {
             </ul>
           </div>
         </div>
-        <Footer />
       </section>
     );
 };
