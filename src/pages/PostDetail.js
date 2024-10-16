@@ -1,10 +1,11 @@
 import { useParams } from "react-router-dom";
 import React from "react";
 import BlogPost from "../components/BlogPost";
+import blogPostsData from "../data-2.json";
 
-const SinglePost = ({ posts }) => {
+const PostDetail = () => {
   const { id } = useParams();
-  const post = posts.find((post) => post.id === parseInt(id));
+  const post = blogPostsData.find((post) => post.id === parseInt(id));
 
   if (!post) {
     return <p>Post not found</p>;
@@ -38,4 +39,4 @@ const SinglePost = ({ posts }) => {
     );
 };
 
-export default SinglePost;
+export default PostDetail;
