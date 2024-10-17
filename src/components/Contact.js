@@ -1,3 +1,5 @@
+import PrimaryButton from "./button/PrimaryButton";
+
 const Contact = () => {
   return (
     <section className="flex flex-col lg:px-13.25">
@@ -13,9 +15,7 @@ const Contact = () => {
           lovers by sharing your thoughts, questions, or tips below.
         </p>
         <div className="flex justify-center mt-8">
-          <button className="bg-red rounded-full text-white px-11 py-2 font-semibold text-xs lg:text-base">
-            Email Me
-          </button>
+          <PrimaryButton title="Email Me" />
         </div>
       </div>
     </section>
