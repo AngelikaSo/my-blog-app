@@ -1,10 +1,12 @@
+import PrimaryButton from "./button/PrimaryButton";
+
 const Hero = () => {
   return (
     <section className="flex flex-col items-center lg:px-13.25">
       <div className="w-full bg-blue sm:h-25 md:h-25 lg:h-28.75 relative flex justify-center lg:justify-end lg:pr-10">
-        <button className="bg-red rounded-full text-white px-11 py-2 absolute bottom-14 font-semibold text-xs lg:text-base">
-          Read
-        </button>
+        <div className="absolute bottom-14">
+          <PrimaryButton title="Read" />
+        </div>
       </div>
       <div className="bg-light-blue sm:h-48 md:h-48 h-52 px-6 py-11">
         <p className="text-white sm:text-xs md:text-sm lg:text-base">
